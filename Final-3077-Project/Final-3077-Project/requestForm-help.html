@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!--Request Form wiki help -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Madison Uszynski">
+        <meta name="description" content="Request Form Help">
+        <meta name="keywords" content="Request,Form,help">
+        <link rel="stylesheet" href="product.css">
+        <title>Request Form Wiki</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> <!--icon-->
+    </head>
+    <body>
+        <div class="background">
+            <div id="navbar-container"></div>
+            <div class="content-container">
+                <div class="title-container">
+                    <h1>Wiki: How the Request Form Works</h1>
+                </div>
+                <section> <!--instructions with javascript breakdown-->
+                    <h2>product_request.js</h2> <!--step 1-->
+                    <img src="images/formwiki1.jpg">
+                    <p>When "Request More!" button is selected</p>
+                    <p>First p tag of the form is duplicated AKA where the user inputs the request</p>
+                    <p>The new input box is placed above the buttons and below the original input</p>
+                    <p>Remove function is added to new input</p>
+                    <img src="images/formwiki2.jpg">
+                    <p>The remove button is given the function to remove its parent element AKA the input</p>
+                    <img src="images/formwiki3.jpg">
+                    <p>On submit:</p>
+                    <p>This form does not send but logs</p>
+                    <p>Product input values are collected, and logged as "Items Requested:" </p>
+                    <p>The form is cleared and the message "Thanks For your Feedback" is shown</p>
+                </section>
+            </div>
+            <div id="footer"></div>
+        </div>
+        <script src="nav.js"></script> 
+    </body>
+</html>

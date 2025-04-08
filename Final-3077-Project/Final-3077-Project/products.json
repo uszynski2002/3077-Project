@@ -1,0 +1,424 @@
+{
+  "products": [
+    {
+      "name": "Coffee",
+      "image1": "images/coffee small bag.png",
+      "image2": "images/coffee large.png",
+      "image1Alt": "A small bag of coffee beans",
+      "image2Alt": "A large bag of coffee beans",
+      "category": "Coffee",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "100g",
+          "price": 25
+        },
+        {
+          "size": "250g",
+          "price": 50
+        }
+      ],
+      "description": "Imported from Brazil. A smooth blend that can arrive on time for your cafe rush hours.",
+      "productPageURL": "Product1.html"
+    },
+    {
+      "name": "Tea",
+      "image1": "images/small tea.png",
+      "image2": "images/big tea.png",
+      "image1Alt": "A small bag of tea",
+      "image2Alt": "A large bag of tea",
+      "category": "Tea",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "100g",
+          "price": 20
+        },
+        {
+          "size": "250g",
+          "price": 40
+        }
+      ],
+      "description": "A fine blend of tea leaves imported from India, perfect for any time of the day.",
+      "productPageURL": "Product2.html"
+    },
+    {
+      "name": "Hot Chocolate",
+      "image1": "images/hotcoco.png",
+      "image2": "images/hotcoco2.png",
+      "image1Alt": "Ho coco jar",
+      "image2Alt": "Hot coco jar",
+      "category": "Hot Chocolate",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "100g",
+          "price": 20
+        },
+        {
+          "size": "200g",
+          "price": 40
+        }
+      ],
+      "description": "Warm and cozy hot chocolate, perfectly paired with whip cream",
+      "productPageURL": "Product3.html"
+    },
+    {
+      "name": "Matcha",
+      "image1": "images/matcha box.png",
+      "image2": "images/matcha.png",
+      "image1Alt": "Matcha Box",
+      "image2Alt": "Matcha Powder",
+      "category": "Matcha",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "100g",
+          "price": 35
+        },
+        {
+          "size": "250g",
+          "price": 70
+        }
+      ],
+      "description": "Premium Japanese Matcha green tea for a vibrant and energizing experience.",
+      "productPageURL": "Product4.html"
+    },
+    {
+      "name": "Creamer",
+      "image1": "images/creamer small.png",
+      "image2": "images/creamer Large.png",
+      "image1Alt": "A small creamer",
+      "image2Alt": "A large creamer",
+      "category": "Creamer",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "500ml",
+          "price": 15
+        },
+        {
+          "size": "1L",
+          "price": 30
+        }
+      ],
+      "description": "Smooth and creamy dairy creamer for your coffee or tea.",
+      "productPageURL": "Product5.html"
+    },
+    {
+      "name": "Milk",
+      "image1": "images/milk small.png",
+      "image2": "images/milk Large.png",
+      "image1Alt": "A small milk",
+      "image2Alt": "A large milk",
+      "category": "Milk",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "500ml",
+          "price": 10
+        },
+        {
+          "size": "1L",
+          "price": 20
+        }
+      ],
+      "description": "Fresh and full-bodied milk, perfect for your daily coffee or cereal.",
+      "productPageURL": "Product6.html"
+    },
+    {
+      "name": "Skim Milk",
+      "image1": "images/SKIM small.png",
+      "image2": "images/SKIM Large.png",
+      "image1Alt": "A small skim milk",
+      "image2Alt": "A large skim milk",
+      "category": "Skim Milk",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "500ml",
+          "price": 8
+        },
+        {
+          "size": "1L",
+          "price": 16
+        }
+      ],
+      "description": "Low-fat skim milk with all the nutrients and a lighter taste.",
+      "productPageURL": "Product7.html"
+    },
+    {
+      "name": "Oat Milk",
+      "image1": "images/oat small.png",
+      "image2": "images/oat large.png",
+      "image1Alt": "A small oat milk",
+      "image2Alt": "A large oat milk",
+      "category": "Oat Milk",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "500ml",
+          "price": 12
+        },
+        {
+          "size": "1L",
+          "price": 24
+        }
+      ],
+      "description": "A creamy and dairy-free oat milk for those with lactose intolerance.",
+      "productPageURL": "Product8.html"
+    },
+    {
+      "name": "Almond Milk",
+      "image1": "images/almondsm.png",
+      "image2": "images/almond.png",
+      "image1Alt": "A small almond milk",
+      "image2Alt": "A large almond milk",
+      "category": "Almond Milk",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "500ml",
+          "price": 14
+        },
+        {
+          "size": "1L",
+          "price": 28
+        }
+      ],
+      "description": "A nutty and refreshing plant-based milk alternative made from almonds.",
+      "productPageURL": "Product9.html"
+    },
+    {
+      "name": "Soy Milk",
+      "image1": "images/soy.png",
+      "image2": "images/soy.png",
+      "image1Alt": "A small soy milk",
+      "image2Alt": "A large soy milk",
+      "category": "Soy Milk",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "500ml",
+          "price": 11
+        },
+        {
+          "size": "1L",
+          "price": 22
+        }
+      ],
+      "description": "Creamy and nutritious soy milk, a great dairy substitute.",
+      "productPageURL": "Product10.html"
+    },
+    {
+      "name": "Sugar",
+      "image1": "images/sugar.png",
+      "image2": "images/sugar.png",
+      "image1Alt": "sugar",
+      "image2Alt": "sugar",
+      "category": "Sugar",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "500g",
+          "price": 5
+        },
+        {
+          "size": "1kg",
+          "price": 9
+        }
+      ],
+      "description": "Pure cane sugar, perfect for sweetening your beverages and desserts.",
+      "productPageURL": "Product11.html"
+    },
+    {
+      "name": "Syrup Flavours",
+      "image1": "images/syrup.png",
+      "image2": "images/syrup.png",
+      "image1Alt": "Syrup flavour",
+      "image2Alt": "Syrup flavour",
+      "category": "Syrup Flavours",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "250ml",
+          "price": 8
+        },
+        {
+          "size": "500ml",
+          "price": 15
+        }
+      ],
+      "description": "Flavorful syrups to enhance your coffee, tea, and desserts.",
+      "productPageURL": "Product12.html"
+    },
+    {
+      "name": "Whip Cream",
+      "image1": "images/whip.png",
+      "image2": "images/whip.png",
+      "image1Alt": "Whip cream",
+      "image2Alt": "Whip cream",
+      "category": "Whip Cream",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "250ml",
+          "price": 10
+        },
+        {
+          "size": "500ml",
+          "price": 18
+        }
+      ],
+      "description": "Light and fluffy whipped cream for topping your favorite drinks.",
+      "productPageURL": "Product13.html"
+    },
+    {
+      "name": "Cinnamon",
+      "image1": "images/cinnamon.png",
+      "image2": "images/cinnamon.png",
+      "image1Alt": "Cinnamon",
+      "image2Alt": "Cinnamon",
+      "category": "Cinnamon",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "100g",
+          "price": 7
+        },
+        {
+          "size": "250g",
+          "price": 14
+        }
+      ],
+      "description": "Freshly ground cinnamon to spice up your coffee, desserts, and more.",
+      "productPageURL": "Product14.html"
+    },
+    {
+      "name": "Caramel",
+      "image1": "images/caramel.png",
+      "image2": "images/caramel.png",
+      "image1Alt": "Caramel Sauce",
+      "image2Alt": "Caramel Sauce",
+      "category": "Caramel",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "100g",
+          "price": 8
+        },
+        {
+          "size": "250g",
+          "price": 16
+        }
+      ],
+      "description": "Rich and sweet caramel syrup, perfect for coffee or desserts.",
+      "productPageURL": "Product15.html"
+    },
+    {
+      "name": "Sprinkles",
+      "image1": "images/sprinkles.png",
+      "image2": "images/sprinkles.png",
+      "image1Alt": "Sprinkles",
+      "image2Alt": "Sprinkles",
+      "category": "Sprinkles",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "100g",
+          "price": 4
+        },
+        {
+          "size": "250g",
+          "price": 8
+        }
+      ],
+      "description": "Colorful sprinkles to decorate your cupcakes, ice cream, and drinks.",
+      "productPageURL": "Product16.html"
+    },
+    {
+      "name": "Napkins",
+      "image1": "images/napkin small bag.png",
+      "image2": "images/napkin large bag.png",
+      "image1Alt": "Napkins",
+      "image2Alt": "Large napkins",
+      "category": "Napkins",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "Pack of 100",
+          "price": 2
+        },
+        {
+          "size": "Pack of 250",
+          "price": 4
+        }
+      ],
+      "description": "Soft and absorbent napkins for your cafe or home.",
+      "productPageURL": "Product17.html"
+    },
+    {
+      "name": "Take-Out Cups",
+      "image1": "images/coffee cup small.png",
+      "image2": "images/coffee cup large.png",
+      "image1Alt": "Small cups",
+      "image2Alt": "large cups",
+      "category": "Take-Out Cups",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "Pack of 100",
+          "price": 20
+        },
+        {
+          "size": "Pack of 100",
+          "price": 25
+        }
+      ],
+      "description": "Durable and eco-friendly take-out cups for your cafe.",
+      "productPageURL": "Product18.html"
+    },
+    {
+      "name": "Cup Sleeve",
+      "image1": "images/coffe sleeve small.png",
+      "image2": "images/coffe sleeve large.png",
+      "image1Alt": "Coffee sleeves",
+      "image2Alt": "Coffee sleeves",
+      "category": "Cup Sleeve",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "Pack of 100",
+          "price": 5
+        },
+        {
+          "size": "Pack of 250",
+          "price": 10
+        }
+      ],
+      "description": "Protect your customers' hands with these disposable cup sleeves.",
+      "productPageURL": "Product19.html"
+    },
+    {
+      "name": "Coffee Cup Stopper",
+      "image1": "images/coffe stopper.png",
+      "image2": "images/coffe stopper.png",
+      "image1Alt": "Stoppers",
+      "image2Alt": "Stoppers",
+      "category": "Coffee Cup Stopper",
+      "buttonText": "Shop Now",
+      "sizes": [
+        {
+          "size": "Pack of 50",
+          "price": 6
+        },
+        {
+          "size": "Pack of 100",
+          "price": 12
+        }
+      ],
+      "description": "Secure your coffee cups with these convenient stoppers.",
+      "productPageURL": "Product20.html"
+    }
+  ]
+}

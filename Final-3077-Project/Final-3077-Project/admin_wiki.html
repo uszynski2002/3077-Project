@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--admin theme user and product wiki help -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Madison Uszynski">
+    <meta name="description" content="user product, and theme Help">
+    <meta name="keywords" content="admin,user,theme,product">
+    <link rel="stylesheet" href="product.css">
+    <title>Admin Wiki</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!--icon-->
+</head>
+
+<body>
+    <div class="background">
+        <div id="navbar-container"></div>
+        <div class="content-container">
+            <div class="title-container">
+                <h1>Wiki: How to Edit User Status, Products and Theme</h1>
+            </div>
+            <section>
+                <!--instructions with autoplay walkthrough-->
+                <h2>User Status</h2>
+                <!--user status-->
+                <p>Non admin users are provided from the database</p>
+                <img src="images/admin1.jpg">
+                <p>The form supplys a checkbox which will collect user id for the update_users.php
+                    <br> The users are displayed on the Admin page with their current Status<br> allowing admins to see if the acivity has changed
+                </p>
+                <img src="images/admin2.jpg">
+                <p>User is then selected via checkbox and the status is toggled with the option values,<br> then submitted to update_user.php
+                </p>
+                <img src="images/admin3.jpg">
+                <p>update_user.php validates the form submission, finds user of selection, and determines the action
+                    based on the definition<br> users are then entered as id, and status is set to the one selected <br>Admin is sent back to dashboard is sucessful
+                </p>
+                <img src="images/admin4.jpg">
+
+                <h2>Theme Update</h2>
+                <img src="images/admin5.jpg">
+                <p>In the same way as user update, post request is send when a theme is selected and sent to another php
+                    file for execution</p>
+                <img src="images/admin7.jpg">
+                <p>User is checked to be admin<br> database table of site_alts is updated via the setting_value row for themes
+                    <br> the key which is the name of the theme is altered<br> The update_theme.php grabs the newley updated theme and returns it as json
+                    <br> which is then acessed via the nav.js and applied to each page <br> information is cached in localstorage to speed up load time
+                </p>
+                <img src="images/admin6.jpg">
+                 <img src="images/admin8.jpg">
+                <img src="images/admin9.jpg">
+                <h2>Product Edits</h2>
+                <p>products and sizes are grouped</p>
+                <img src="images/admin10.jpg">
+                <p>Products are looped thru and displayed <br> a buttom to edit or delete is provided</p>
+                <img src="images/admin11.jpg">
+                <p>Info from the product_sizes db table is displayed here
+                </p>
+                <img src="images/admin12.jpg">
+                <p>When edit button is clicked, a table of all product inforamtion is displayed and allowed to be edited <br> parts such as url and catagory are readonly<br>
+                    <br> url for image is only a url, and image file MUST be placed in the image folder for response.
+                </p>
+                <img src="images/admin13.jpg">
+                <p>Once submitted, the database will reflect the changes</p>
+                <img src="images/admin14.jpg">
+                <p> the final step in dynaically updating product page is to adjust the data-product tag in the body element, which will trigger the javascript to fill out the product information</p>
+                <img src="images/admin15.jpg">
+                <p> The delete button selects the product based on id, as the product_sizes table reflects changes made on the product table, deleting by the product table id will cause both to clear</p>
+                <img src="images/admin16.jpg">
+
+            </section>
+        </div>
+        <div id="footer"></div>
+        <script src="nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html><!--about page-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Madison Uszynski">
+    <meta name="description" content="About us page">
+    <meta name="keywords" content=" About,us">
+    <link rel="stylesheet" href="product.css"><!--css-->
+    <title>About Us</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><!--icon-->
+  </head>
+  <body>
+    <div class="background">
+        <div id="navbar-container"></div>
+        <div class="content-container">
+            <div class="title-container">
+                <h1>About Us</h1>
+            </div>
+            <section>
+                <p id="about-us">This project tasks students with creating a platform for a potential business venture,
+                 incorporating themes, functional HTML, and JavaScript elements. My proposed business
+                 will focus on products essential for running a café, such as coffee, tea, and beverage 
+                 mixes. Each page will feature two different sizes or variants of each product, with the 
+                 possibility of including a wiki-style section to provide more information about each item. 
+                Additionally, the site will include two HTML forms designed to tally up selected products. 
+                The theme of the site will be dynamic, changing to reflect the seasons, with default, winter, 
+                and summer variations.</p><!--p id for about us styling-->
+            </section>
+            <form id="productRequest"><!--dynamic form -->
+                <h2>Are We Missing Something?</h2>
+                <div id="subMessage"></div>
+                <p>
+                    <label>Sell This!</label> <input type="text" name="product">
+                    <button type="button" class="remove">Remove</button>
+                </p>
+                <p>
+                    <button type="button" class="add">Request More!</button>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+            <div id="chart_div"></div> <!--product chart -->
+        </div>
+        <div id="footer"></div>
+        <script src="nav.js"></script> 
+        <script src="product_request.js"></script><!--form javascript-->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(loadProductData);
+        
+        function loadProductData() {
+            fetch('productchart_data.php') //chart data from db 
+                .then(response => response.json())
+                .then(data => {
+                    const chartData = new google.visualization.DataTable();
+                    chartData.addColumn('string', 'Product');
+                    chartData.addColumn('number', 'Price');
+        
+                    chartData.addRows(data);
+        
+                    const options = {
+                        title: 'Product Prices',
+                        hAxis: { title: 'Product' },
+                        vAxis: { title: 'Price (CAD)' },
+                        legend: 'none'
+                    };
+        
+                    const chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+                    chart.draw(chartData, options);
+                })
+                .catch(error => console.error("Error fetching chart data:", error));
+        }
+        </script>
+
+    </div>
+  </body>
+</html>

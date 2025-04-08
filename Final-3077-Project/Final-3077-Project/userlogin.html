@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--login reg page page-->
+    <html lang="en">      
+    <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Madison Uszynski">
+    <meta name="description" content="Account page">
+    <meta name="keywords" content=" Account,login,page">
+    <link rel="stylesheet" href="product.css">
+    <!--css-->
+    <title>Account Login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!--icon-->
+    </head> 
+    <body>
+        <div class="background">
+            <div id="navbar-container"></div>
+            <div class="content-container">
+                <div class="title-container">          
+                <!-- Registration Form -->
+                    <h1>User Registration</h1>
+                </div>
+                <form action="userCreate.php"method="POST"><!--post executed at userCreate.php-->
+                    <h2>User Sign-Up</h2>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+            
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <label for="is_admin">Admin User:</label>
+                    <input type="checkbox" id="is_admin" name="is_admin" value="1"><br><br>
+            
+                    <input type="submit" name="register" value="Register">
+
+                </form>
+                <!-- Login Form -->
+                <form action="userLogin.php"method="POST"><!--post executed at userLogin.php-->
+                    <h2>User Login</h2>
+                    <label for="login_username">Username:</label>
+                    <input type="text" id="login_username" name="login_username" required><br><br>
+            
+                    <label for="login_password">Password:</label>
+                    <input type="password" id="login_password" name="login_password" required><br><br>
+            
+                    <input type="submit" name="login" value="Login">
+                </form>
+            </div>
+            <div id="footer"></div>
+            <script src="nav.js"></script> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html> <!--nav and footer wiki help -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Madison Uszynski">
+        <meta name="description" content="Nav and Footer Help">
+        <meta name="keywords" content=" Nav,Footer,help">
+        <link rel="stylesheet" href="product.css">
+        <title>Nav and Footer Wiki</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> <!--icon-->
+    </head>
+    <body>
+        <div class="background">
+            <div id="navbar-container"></div>
+            <div class="content-container">
+                <div class="title-container">
+                    <h1>Wiki: How to Edit Nav and Footer</h1>
+                </div>
+                <section> <!--instructions-->
+                    <h2>Nav</h2> <!--Nav-->
+                    <p>Locate the navbar.html file</p>
+                    <p>Find the item you want to replace/edit</p>
+                    <img src="images/navwiki.jpg">
+                    <p>Adjust the name in the &lta&gt element, and assign to the new correlated html url </p>
+                    <h2>Footer</h2> <!--footer-->
+                    <img src="images/footerwiki.jpg">
+                    <p>In the same way as the navbar, locate footer.html, alter the text in &lta&gt elements, and assign to the new correlated html url</p>
+                    <h2>nav.js</h2> <!--nav and footer javascript-->
+                    <img src="images/NFjava.jpg">
+                    <p>nav.js dynamically adds the Nav bar and footer to each page</p>
+                    <p>Using fetch API, html are called by url and convert the response to text, this allows the element to be added by id </p>
+                </section>
+            </div>
+            <div id="footer"></div>
+        </div>
+        <script src="nav.js"></script> 
+    </body>
+</html>

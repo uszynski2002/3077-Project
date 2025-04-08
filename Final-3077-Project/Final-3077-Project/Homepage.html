@@ -1,0 +1,33 @@
+<!DOCTYPE html><!--HomePage-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Madison Uszynski">
+    <meta name="description" content="The Coffee SetUp Homepage">
+    <meta name="keywords" content="coffee,homepage,coffeesetup">
+    <link rel="stylesheet" href="product.css"><!--CSS-->
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><!--icon-->
+  </head>
+  <body>
+    <div class="background">
+      <div id="navbar-container"></div>
+      <div class="content-container"><!-- java target for columns-->
+        <div class="title-container">
+            <h1>Welcome to Coffee SetUp</h1>
+        </div>
+      </div>
+      <video id="homevideo" autoplay muted loop> 
+        <source src="Scroll.mp4" type="video/mp4"><!--change video here-->
+        <source src="Scroll.mov" type="video/quicktime"><!--and here in alt format-->
+      </video>
+      <h2 id="headoffice">Visit Our Head Office</h2><!--map heading -->
+      <iframe src="https://storage.googleapis.com/maps-solutions-i68eqslcp6/locator-plus/qmya/locator-plus.html"
+        loading="lazy"><!--api call for map -->
+      </iframe>
+      <div id="footer"></div><!--footer-->
+    </div>
+    <script src="Homepage.js"></script> <!-- homepage java-->
+    <script src="nav.js"></script> <!-- nav footer and theme java-->
+  </body>
+</html>

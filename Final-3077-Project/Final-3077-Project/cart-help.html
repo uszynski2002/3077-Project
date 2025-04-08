@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!--cart wiki help -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Madison Uszynski">
+        <meta name="description" content="Cart Help">
+        <meta name="keywords" content="Cart,help">
+        <link rel="stylesheet" href="product.css">
+        <title>Cart Wiki for Updates</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> <!--icon-->
+    </head>
+    <body>
+        <div class="background">
+            <div id="navbar-container"></div>
+            <div class="content-container">
+                <div class="title-container">
+                    <h1>Wiki: How the Shopping Cart Works</h1>
+                </div>
+                <section> <!--instructions with javascript breakdown-->
+                    <h2>Product.js Action</h2> <!--step 1-->
+                    <p>Adding products to cart starts on the product#.html, AKA product.js</p>
+                    <img src="images/cartwiki1.jpg">
+                    <p>Function addToBag grabs product information from products.JSON when the product size is selected.<br>productData: object holding product values<br>productName: Name value<br>productSize: Size value based on button selected<br>productCost: Cost value based on button selected<br>imageIndex: index that determines which photo to log</p>
+                    <p>The cart is then loaded from localStorage, if item has perviously been added, it is parsed back into an object.</p>
+                    <img src="images/cartwiki2.jpg">
+                    <p>productDifferent will add the same product but in different sizes as seperate items in the cart (ex Coffee Small and Coffee Large will both appear)</p>
+                    <p>selectedImage makes sure the correct image is stored in log, if imageIndex = 0 (default image) use image1</p>
+                    <img src="images/cartwiki3.jpg">
+                    <p>If the selected product is already in cart, the quantity will increase by one,<br>rather than it appearing as seperate in cart</p>
+                    <p>If item is not in cart, the product will be saved as: <br>quantity:1<br>size: productSize<br> itemPrice: productCost<br> image: selectedImage</p>
+                    <p>Product is now added to the local storage</p>
+
+                    <h2>cart.js</h2> <!--cart.js breakdown-->
+                    <p>The Product info can now be accessed on ShoppingCart.html</p>
+                    <img src="images/cartwiki4.jpg">
+                    <p>When page loads, stored product info is displayed in dynamic form</p>
+                    <p>display is updated if user went back to add more items in cart, adding upon previous selections</p>
+                    <p>old entries are removed, and total is set to 0, which will hold the total value by the end</p>
+                    <img src="images/cartwiki5.jpg">
+                    <p>Loop through all products in cart</p>
+                    <p>Price is calculated by grabbing quantity of item and mulitplying by price</p>
+                    <p>total price of products is added to cart total creating the overall cost</p>
+                    <p>Product information is then grouped as list items to be displayed in the form </p>
+                    <p>Remove item button is added to each product row</p>
+                    <img src="images/cartwiki6.jpg">
+                    <p>Grand total is added as a list item on its own row</p>
+                    <p>Remove item button will remove product completely if quantity is 1, but lowers count by 1 is more than 1 is in cart </p>
+                    <p>Cart is updated after item removed</p>
+                </section>
+            </div>
+            <div id="footer"></div>
+        </div>
+        <script src="nav.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Madison Uszynski">
+    <meta name="description" content=""><!--updated with javascript-->
+    <meta name="keywords" content=""><!--updated with javascript-->
+    <link rel="stylesheet" href="product.css">
+    <title></title><!--updated with javascript-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body data-product="Napkins"> <!--UPDATE THIS ONLY--><!--data-product will identify the php file info -->
+
+    <div class="background"> <!-- full screen colour-->
+      <div id="navbar-container"></div> <!-- Nav html and java -->
+      <div class="content-container">
+
+        <div class="title-container"> 
+          <h1 id="product-name"></h1><!-- dynamic title with database info -->
+        </div>
+
+        <div class="product-info"> <!-- Product Information Section -->
+          <img class="product-image" id="product-image" src="" alt="">
+        </div>
+
+        <div class="product-info">
+          <h3 id="product-description"></h3> <!-- Product Description -->
+        </div>
+
+        <div class="option-container" id="size-options"> <!-- Size Options -->
+        </div>
+      </div>
+
+      <div id="footer"></div>
+      <script src="product.js"></script> 
+      <script src="nav.js"></script> 
+    </div>
+  </body>
+</html>
